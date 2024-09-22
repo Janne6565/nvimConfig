@@ -1,6 +1,6 @@
 local builtin = require('telescope.builtin')
 
-vim.keymap.set('n', '<leader>pf', function()
+vim.keymap.set('n', '<leader>ps', function()
     -- Check if we are in a Git repository
     local is_git_repo = vim.fn.system('git rev-parse --is-inside-work-tree') == 'true\n'
 

@@ -47,5 +47,13 @@ return require('packer').startup(function(use)
     use('rcarriga/nvim-notify')
 
 
+    use({
+        'Wansmer/treesj',
+        requires = { 'nvim-treesitter/nvim-treesitter' }, -- if you install parsers with `nvim-treesitter`
+        config = function()
+            require('treesj').setup({ --[[ your config ]] })
+        end,
+    })
+
     use('jrop/jq.nvim')
 end)
