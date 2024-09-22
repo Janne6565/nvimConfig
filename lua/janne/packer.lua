@@ -23,10 +23,29 @@ return require('packer').startup(function(use)
     use('preservim/nerdtree')
     use('mfussenegger/nvim-jdtls')
 
+    use('echasnovski/mini.ai')
+    use({
+        "kylechui/nvim-surround",
+        tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+        config = function()
+            require("nvim-surround").setup({
+                -- Configuration here, or leave empty to use defaults
+            })
+        end
+    })
+
+    -- LSP stuff
     use({ 'VonHeikemen/lsp-zero.nvim', branch = 'v4.x' })
     use({ 'neovim/nvim-lspconfig' })
     use({ 'hrsh7th/nvim-cmp' })
     use({ 'hrsh7th/cmp-nvim-lsp' })
+
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+    use('rcarriga/nvim-notify')
+
 
     use('jrop/jq.nvim')
 end)

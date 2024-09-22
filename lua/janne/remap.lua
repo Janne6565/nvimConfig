@@ -21,7 +21,7 @@ vim.keymap.set("v", "<leader>d", "\"_d")
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 vim.keymap.set("n", "Q", "<nop>")
-vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux new tmux-sessionizer<CR>")
 vim.keymap.set("n", "<leader>f", function()
     vim.lsp.buf.format()
 end)
@@ -35,3 +35,12 @@ vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w><Left><Left><Le
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 vim.keymap.set("n", "<S-CR>", "<Esc>o<Esc>")
+
+vim.keymap.set("i", "<C-a>", "<Esc>^ggvG$")
+vim.keymap.set("n", "<C-a>", "^ggvG$")
+
+vim.keymap.set("n", "+", "<C-a>")
+vim.keymap.set("n", "-", "<C-x>")
+
+vim.keymap.set("n", "<leader>tr", "<C-w>v<C-w>l<cmd>:term<CR>")
+vim.keymap.set("n", "<leader>q", "<cmd>:q<CR>")

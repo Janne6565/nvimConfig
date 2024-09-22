@@ -1,4 +1,7 @@
 local lsp_zero = require('lsp-zero')
+vim.keymap.set('n', '<leader>ps', function()
+    builtin.grep_string({ search = vim.fn.input("Grep > ") });
+end)
 
 local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()
@@ -73,3 +76,9 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 require 'lspconfig'.cssls.setup {
     capabilities = capabilities,
 }
+
+require 'lspconfig'.html.setup({
+    capabilities = capabilities,
+})
+
+require 'lspconfig'.digestif.setup {}
