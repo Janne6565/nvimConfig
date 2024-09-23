@@ -44,3 +44,8 @@ vim.keymap.set("n", "-", "<C-x>")
 
 vim.keymap.set("n", "<leader>tr", "<C-w>v<C-w>l<cmd>:term<CR>")
 vim.keymap.set("n", "<leader>q", "<cmd>:q<CR>")
+
+vim.keymap.set("n", "<leader>pf", function()
+    vim.notify("Youve unbinded this to <leader>ps", "error", { title = "Idiot" })
+end)
+

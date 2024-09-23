@@ -64,21 +64,11 @@ lsp_zero.extend_lspconfig({
     capabilities = require('cmp_nvim_lsp').default_capabilities(),
 })
 
-require('lspconfig').lua_ls.setup {}
-require('lspconfig').pyright.setup {}
-require('lspconfig').ts_ls.setup {}
-require 'lspconfig'.jdtls.setup { cmd = { 'jdtls' } }
+require("lspconfig").lua_ls.setup {}
+require("lspconfig").rust_analyzer.setup {}
+require("lspconfig").pylsp.setup {}
+require("lspconfig").html.setup {}
+require("lspconfig").jdtls.setup {}
+require("lspconfig").ast_grep.setup {}
 
---Enable (broadcasting) snippet capability for completion
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-require 'lspconfig'.cssls.setup {
-    capabilities = capabilities,
-}
-
-require 'lspconfig'.html.setup({
-    capabilities = capabilities,
-})
-
-require 'lspconfig'.digestif.setup {}
