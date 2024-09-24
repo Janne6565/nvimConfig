@@ -69,3 +69,4 @@ require("lspconfig").rust_analyzer.setup {}
 require("lspconfig").pylsp.setup {}
 require("lspconfig").jdtls.setup {}
 require("lspconfig").html.setup {}
+require("lspconfig").eslint.setup {}
