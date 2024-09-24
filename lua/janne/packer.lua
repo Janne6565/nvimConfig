@@ -34,14 +34,8 @@ return require('packer').startup(function(use)
     })
 
     -- LSP stuff
-    use({ 'VonHeikemen/lsp-zero.nvim', branch = 'v4.x' })
-    use({ 'neovim/nvim-lspconfig' })
-    use({ 'hrsh7th/nvim-cmp' })
-    use({ 'hrsh7th/cmp-nvim-lsp' })
-    use {
-        "williamboman/mason.nvim",
-        "williamboman/mason-lspconfig.nvim",
-    }
+    use { 'neoclide/coc.nvim', branch = 'release' }
+
 
     use {
         'nvim-lualine/lualine.nvim',
@@ -59,7 +53,6 @@ return require('packer').startup(function(use)
     })
 
     use('jrop/jq.nvim')
-    use('mfussenegger/nvim-jdtls')
     use { 'junegunn/fzf', run = ":call fzf#install()" }
     use { 'junegunn/fzf.vim' }
     use('voldikss/vim-floaterm')

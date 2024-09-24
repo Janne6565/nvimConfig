@@ -1,0 +1,12 @@
+{
+  "snippets.ultisnips.pythonPrompt": false,
+  "tsserver.enable": true,
+  "pyright.enable": true,
+  "java.jdt.ls.vmargs": "-Xmx1G",
+  "lua.telemetry.enable": false,
+  "lua.runtime.version": "LuaJIT",  // Specify the Lua version you're using
+  "lua.diagnostics.enable": true,
+  "lua.workspace.library": [
+    "/path/to/your/lua/library"  // Specify any libraries to include
+  ]
+}
