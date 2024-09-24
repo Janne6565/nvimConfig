@@ -1,4 +1,5 @@
 local builtin = require('telescope.builtin')
+require('telescope').load_extension('floaterm')
 
 vim.keymap.set('n', '<leader>ps', function()
     -- Check if we are in a Git repository

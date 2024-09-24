@@ -62,4 +62,6 @@ return require('packer').startup(function(use)
     use('mfussenegger/nvim-jdtls')
     use { 'junegunn/fzf', run = ":call fzf#install()" }
     use { 'junegunn/fzf.vim' }
+    use('voldikss/vim-floaterm')
+    use('dawsers/telescope-floaterm.nvim')
 end)
