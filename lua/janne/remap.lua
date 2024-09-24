@@ -52,7 +52,8 @@ vim.keymap.set("n", "<leader>f", "<cmd>FZF<CR>")
 
 vim.keymap.set("t", "<Esc>", '<C-\\><C-N>', { noremap = true, silent = true })
 
-vim.keymap.set("n", "<leader>t", "<cmd>:FloatermNew<CR>")
+vim.keymap.set("n", "<leader>t", "<cmd>:FloatermNew<CR>", { silent = true })
+vim.keymap.set("n", "<C-t>", "<cmd>:FloatermToggle<CR>")
+vim.keymap.set("t", "<C-t>", "<cmd>:FloatermToggle<CR>")
 vim.keymap.set("t", "<C-l>", "<cmd>:FloatermNext<CR>")
 vim.keymap.set("t", "<C-h>", "<cmd>:FloatermPrev<CR>")
-vim.keymap.set("n", "<leader>h", "<cmd>:FloatermToggle<CR>")
