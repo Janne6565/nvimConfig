@@ -16,7 +16,7 @@ cmp.setup({
         ['<C-n>'] = cmp.mapping.select_next_item({ behavior = 'select' }),
 
         -- `Enter` key to confirm completion
-        ['<CR>'] = cmp.mapping.confirm({ select = false }),
+        ['<C-y>'] = cmp.mapping.confirm({ select = false }),
 
         -- Ctrl+Space to trigger completion menu
         ['<C-Space>'] = cmp.mapping.complete(),
@@ -67,8 +67,5 @@ lsp_zero.extend_lspconfig({
 require("lspconfig").lua_ls.setup {}
 require("lspconfig").rust_analyzer.setup {}
 require("lspconfig").pylsp.setup {}
-require("lspconfig").html.setup {}
 require("lspconfig").jdtls.setup {}
-require("lspconfig").ast_grep.setup {}
-
-
+require("lspconfig").html.setup {}

@@ -21,7 +21,6 @@ return require('packer').startup(function(use)
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
     use('preservim/nerdtree')
-    use('mfussenegger/nvim-jdtls')
 
     use('echasnovski/mini.ai')
     use({
@@ -60,4 +59,7 @@ return require('packer').startup(function(use)
     })
 
     use('jrop/jq.nvim')
+    use('mfussenegger/nvim-jdtls')
+    use { 'junegunn/fzf', run = ":call fzf#install()" }
+    use { 'junegunn/fzf.vim' }
 end)

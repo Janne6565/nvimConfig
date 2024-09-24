@@ -48,4 +48,4 @@ vim.keymap.set("n", "<leader>q", "<cmd>:q<CR>")
 vim.keymap.set("n", "<leader>pf", function()
     vim.notify("Youve unbinded this to <leader>ps", "error", { title = "Idiot" })
 end)
-
+vim.keymap.set("n", "<leader>f", "<cmd>FZF<CR>")
