@@ -6,7 +6,14 @@ vim.g.coc_global_extensions = {
     'coc-pyright', -- Python LSP
     'coc-java',   -- Java LSP
     'coc-snippets', -- Snippet support
-    'coc-lua'
+    'coc-lua',
+    'coc-phpls',
+    'coc-css',
+    'coc-clangd',
+    'coc-json',
+    'coc-sql',
+    'coc-kotlin',
+    'coc-html'
     -- Add more extensions here based on the languages you're working with
 }
 

@@ -57,4 +57,23 @@ return require('packer').startup(function(use)
     use { 'junegunn/fzf.vim' }
     use('voldikss/vim-floaterm')
     use('dawsers/telescope-floaterm.nvim')
+
+    use {
+        'kawre/leetcode.nvim',
+        build = ':TSUpdate html',
+        requires = {
+            'nvim-telescope/telescope.nvim',
+            'nvim-lua/plenary.nvim', -- required by telescope
+            'MunifTanjim/nui.nvim',
+
+            -- optional dependencies
+            'nvim-treesitter/nvim-treesitter',
+            'rcarriga/nvim-notify',
+            'nvim-tree/nvim-web-devicons',
+        },
+        config = function()
+            -- configuration goes here
+        end,
+    }
+    use('MunifTanjim/nui.nvim')
 end)
